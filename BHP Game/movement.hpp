@@ -2,6 +2,7 @@
 #define MOVEMENT_HPP_INCLUDED
 #include<SFML/Graphics.hpp>
 #include<SFML/Audio.hpp>
+#include"plik.hpp"
 
 class entertaceAnimation
 {

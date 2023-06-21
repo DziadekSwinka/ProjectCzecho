@@ -4,6 +4,7 @@
 #include "surr.hpp"
 #include "wiertaczka.hpp"
 #include "zdjecia.hpp"
+#include "plik.hpp"
 
 bool zjechal=false;
 int main()
@@ -32,7 +33,7 @@ int main()
         zd.Update(animation.anime);
         surr.Update(animation.anime);
         wiertlo.Update();
-        Miner.update(animation.anime);
+        Miner.update(animation.anime,wiertlo.wPojezdzie);
         window.display();
     }
 
