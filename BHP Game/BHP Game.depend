@@ -428,15 +428,21 @@
 1687324775 c:\users\hp-1\documents\github\project\bhp game\miner.hpp
 	<SFML/Graphics.hpp>
 
-1687342570 source:c:\users\kamil\desktop\projectczecho\bhp game\main.cpp
+1687357372 source:c:\users\kamil\desktop\projectczecho\bhp game\main.cpp
 	<SFML/Graphics.hpp>
 	"movement.hpp"
 	"miner.hpp"
+	"surr.hpp"
+	"wiertaczka.hpp"
+	"zdjecia.hpp"
+	"plik.hpp"
 
-1687343226 c:\users\kamil\desktop\projectczecho\bhp game\movement.hpp
+1687357372 c:\users\kamil\desktop\projectczecho\bhp game\movement.hpp
 	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	"plik.hpp"
 
-1687343226 c:\users\kamil\desktop\projectczecho\bhp game\miner.hpp
+1687357372 c:\users\kamil\desktop\projectczecho\bhp game\miner.hpp
 	<SFML/Graphics.hpp>
 
 1687324627 c:\users\hp-1\documents\github\project\bhp game\surr.hpp
@@ -555,4 +561,17 @@
 	"plik.hpp"
 
 1687324718 c:\users\hp-1\documents\github\project\bhp game\plik.hpp
+
+1687357372 c:\users\kamil\desktop\projectczecho\bhp game\plik.hpp
+
+1687357372 c:\users\kamil\desktop\projectczecho\bhp game\surr.hpp
+	"plik.hpp"
+
+1687357372 c:\users\kamil\desktop\projectczecho\bhp game\wiertaczka.hpp
+	<SFML/Graphics.hpp>
+	"plik.hpp"
+
+1687357372 c:\users\kamil\desktop\projectczecho\bhp game\zdjecia.hpp
+	<SFML/Window.hpp>
+	"plik.hpp"
 
