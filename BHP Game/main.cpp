@@ -2,7 +2,9 @@
 #include "movement.hpp"
 #include "miner.hpp"
 #include "surr.hpp"
+#include "wiertaczka.hpp"
 
+bool zjechal=false;
 int main()
 {
     sf::RenderWindow window(sf::VideoMode(1920, 1080), "BHP Game");
@@ -12,6 +14,7 @@ int main()
     tunnel.setFillColor(sf::Color(97,97,97));
     miner Miner(window);
     entertaceAnimation animation(window);
+    wiertaczka wiertlo(window);
     while (window.isOpen())
     {
         sf::Event event;
@@ -25,6 +28,7 @@ int main()
         if(animation.anime)
             tunnel.setPosition(tunnel.getPosition().x,animation.Update()+60);
         surr.Update(animation.anime);
+        wiertlo.Update();
         Miner.update(animation.anime);
         window.display();
     }
