@@ -2,7 +2,7 @@
 
 entertaceAnimation::entertaceAnimation(sf::RenderWindow &window1):window(window1)
 {
-    sb.loadFromFile("glos//poczatek.wav");
+    sb.loadFromFile("koniec.ogg");
     sound.setBuffer(sb);
     font.loadFromFile("Roboto_Slab//RobotoSlab-VariableFont_wght.ttf");
     IntroText.setFont(font);
