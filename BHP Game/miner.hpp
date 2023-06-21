@@ -37,7 +37,7 @@ public:
             sprite.setTexture(texture[prev]);
         }
         if(!show)
-        window.draw(sprite);
+            window.draw(sprite);
     }
 };
 
