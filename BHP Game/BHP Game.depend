@@ -422,3 +422,14 @@
 1687310794 c:\users\hp-1\documents\github\project\bhp game\miner.hpp
 	<SFML/Graphics.hpp>
 
+1687342570 source:c:\users\kamil\desktop\projectczecho\bhp game\main.cpp
+	<SFML/Graphics.hpp>
+	"movement.hpp"
+	"miner.hpp"
+
+1687342570 c:\users\kamil\desktop\projectczecho\bhp game\movement.hpp
+	<SFML/Graphics.hpp>
+
+1687342570 c:\users\kamil\desktop\projectczecho\bhp game\miner.hpp
+	<SFML/Graphics.hpp>
+
