@@ -1,8 +1,10 @@
 # depslib dependency file v1.0
-1687310794 source:c:\users\hp-1\documents\github\project\bhp game\main.cpp
+1687319111 source:c:\users\hp-1\documents\github\project\bhp game\main.cpp
 	<SFML/Graphics.hpp>
 	"movement.hpp"
 	"miner.hpp"
+	"surr.hpp"
+	"wiertaczka.hpp"
 
 1687306197 c:\users\hp-1\desktop\sfml-2.5.1\include\sfml\graphics.hpp
 	<SFML/Window.hpp>
@@ -413,10 +415,10 @@
 	<SFML/Graphics/Drawable.hpp>
 	<SFML/Window/GlResource.hpp>
 
-1687310751 source:c:\users\hp-1\documents\github\project\bhp game\movement.cpp
+1687319010 source:c:\users\hp-1\documents\github\project\bhp game\movement.cpp
 	"movement.hpp"
 
-1687311248 c:\users\hp-1\documents\github\project\bhp game\movement.hpp
+1687313780 c:\users\hp-1\documents\github\project\bhp game\movement.hpp
 	<SFML/Graphics.hpp>
 
 1687310794 c:\users\hp-1\documents\github\project\bhp game\miner.hpp
@@ -431,5 +433,10 @@
 	<SFML/Graphics.hpp>
 
 1687343226 c:\users\kamil\desktop\projectczecho\bhp game\miner.hpp
+	<SFML/Graphics.hpp>
+
+1687318948 c:\users\hp-1\documents\github\project\bhp game\surr.hpp
+
+1687319532 c:\users\hp-1\documents\github\project\bhp game\wiertaczka.hpp
 	<SFML/Graphics.hpp>
 

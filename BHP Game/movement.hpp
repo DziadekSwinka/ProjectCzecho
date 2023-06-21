@@ -6,11 +6,13 @@ class entertaceAnimation
 {
 public:
     entertaceAnimation(sf::RenderWindow &window1);
-    void Update();
+    float Update();
     bool anime;
 private:
+    sf::Font font;
+    sf::Text IntroText;
     sf::RenderWindow &window;
-    sf::Sprite shaft[15],elev;
+    sf::Sprite shaft[5],elev;
     sf::Texture elevFull,elevEmpty,shaftT;
     sf::Clock animationTime;
 };
