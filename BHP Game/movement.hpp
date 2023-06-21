@@ -10,8 +10,9 @@ public:
     bool anime;
 private:
     sf::RenderWindow &window;
-    sf::Sprite shaft,elev;
+    sf::Sprite shaft[15],elev;
     sf::Texture elevFull,elevEmpty,shaftT;
+    sf::Clock animationTime;
 };
 
 
