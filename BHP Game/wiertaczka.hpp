@@ -13,7 +13,7 @@ public:
     {
         txt.loadFromFile("Wiertlo.png");
         wiert.setTexture(txt);
-        wiert.setPosition(sf::Vector2f(3000,410));
+        wiert.setPosition(sf::Vector2f(3000,480));
     }
     void Update()
     {

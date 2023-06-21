@@ -1,6 +1,7 @@
 #ifndef MOVEMENT_HPP_INCLUDED
 #define MOVEMENT_HPP_INCLUDED
 #include<SFML/Graphics.hpp>
+#include<SFML/Audio.hpp>
 
 class entertaceAnimation
 {
@@ -9,6 +10,8 @@ public:
     float Update();
     bool anime;
 private:
+    sf::Sound sound;
+    sf::SoundBuffer sb;
     sf::Font font;
     sf::Text IntroText;
     sf::RenderWindow &window;

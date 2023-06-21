@@ -3,6 +3,7 @@
 #include "miner.hpp"
 #include "surr.hpp"
 #include "wiertaczka.hpp"
+#include "zdjecia.hpp"
 
 bool zjechal=false;
 int main()
@@ -13,6 +14,7 @@ int main()
     tunnel.setPosition(0,815);
     tunnel.setFillColor(sf::Color(97,97,97));
     miner Miner(window);
+    zdj zd(window);
     entertaceAnimation animation(window);
     wiertaczka wiertlo(window);
     while (window.isOpen())
@@ -27,6 +29,7 @@ int main()
         window.draw(tunnel);
         if(animation.anime)
             tunnel.setPosition(tunnel.getPosition().x,animation.Update()+60);
+        zd.Update(animation.anime);
         surr.Update(animation.anime);
         wiertlo.Update();
         Miner.update(animation.anime);
