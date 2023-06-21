@@ -9,6 +9,7 @@ int main()
     tunnel.setPosition(0,300);
     tunnel.setFillColor(sf::Color(97,97,97));
     miner Miner(window);
+    entertaceAnimation animation(window);
     while (window.isOpen())
     {
         sf::Event event;
@@ -18,8 +19,11 @@ int main()
                 window.close();
         }
         window.clear(sf::Color(43,43,42));
-        window.draw(tunnel);
-        Miner.update();
+        if(!animation.anime)
+            window.draw(tunnel);
+        if(animation.anime)
+            animation.Update();
+        Miner.update(animation.anime);
         window.display();
     }
 
