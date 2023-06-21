@@ -1,5 +1,6 @@
 #ifndef SURR_HPP_INCLUDED
 #define SURR_HPP_INCLUDED
+#include "plik.hpp"
 
 class surrounding
 {
@@ -32,17 +33,17 @@ public:
         if(b)
             for(int i=0;i<10;i++)
             {
-                lamp[i].move(0,-0.5);
-                bel[i].move(0,-0.5);
+                lamp[i].move(0,-0.5*deltaTime.FrameTime());
+                bel[i].move(0,-0.5*deltaTime.FrameTime());
             }
         for(int i=0;i<10;i++)
             window.draw(lamp[i]);
         for(int i=0;i<10;i++)
         {
             if(sf::Keyboard::isKeyPressed(sf::Keyboard::D))
-                lamp[i].move(-0.5,0);
+                lamp[i].move(-0.5*deltaTime.FrameTime(),0);
             if(sf::Keyboard::isKeyPressed(sf::Keyboard::A))
-                lamp[i].move(0.5,0);
+                lamp[i].move(0.5*deltaTime.FrameTime(),0);
             if(lamp[i].getPosition().x<-300)
                 lamp[i].setPosition(5000,lamp[i].getPosition().y);
             if(lamp[i].getPosition().x>5000)
@@ -52,9 +53,9 @@ public:
         for(int i=0;i<10;i++)
         {
             if(sf::Keyboard::isKeyPressed(sf::Keyboard::D))
-                bel[i].move(-0.1,0);
+                bel[i].move(-0.1*deltaTime.FrameTime(),0);
             if(sf::Keyboard::isKeyPressed(sf::Keyboard::A))
-                bel[i].move(0.1,0);
+                bel[i].move(0.1*deltaTime.FrameTime(),0);
             if(bel[i].getPosition().x<-300)
                 bel[i].setPosition(5000,bel[i].getPosition().y);
             if(bel[i].getPosition().x>5000)

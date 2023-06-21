@@ -22,7 +22,7 @@ public:
         sprite.setPosition(180,430);
         sprite.setScale(0.6,0.6);
     }
-    void update(bool show)
+    void update(bool show,bool WP)
     {
         if(sf::Keyboard::isKeyPressed(sf::Keyboard::D) || sf::Keyboard::isKeyPressed(sf::Keyboard::A))
         {
@@ -36,7 +36,7 @@ public:
                 prev=0;
             sprite.setTexture(texture[prev]);
         }
-        if(!show)
+        if(!show && !WP)
             window.draw(sprite);
     }
 };

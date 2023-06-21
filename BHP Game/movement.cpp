@@ -2,6 +2,8 @@
 
 entertaceAnimation::entertaceAnimation(sf::RenderWindow &window1):window(window1)
 {
+    sb.loadFromFile("poczatek.wav");
+    sound.setBuffer(sb);
     font.loadFromFile("Roboto_Slab//RobotoSlab-VariableFont_wght.ttf");
     IntroText.setFont(font);
     IntroText.setString("BHP w kopalni");
@@ -20,15 +22,16 @@ entertaceAnimation::entertaceAnimation(sf::RenderWindow &window1):window(window1
     }
     elev.setScale(0.6,0.6);
     elev.setPosition(120,340);
+    sound.play();
 }
 float entertaceAnimation::Update()
 {
     anime=true;
     for(int i=0;i<5;i++)
     {
-        if(animationTime.getElapsedTime().asSeconds()<=7)
+        if(animationTime.getElapsedTime().asSeconds()<=6.8)
         {
-            shaft[i].move(0,-0.5);
+            shaft[i].move(0,-0.5*deltaTime.FrameTime());
         }else anime=false;
 
         window.draw(shaft[i]);
