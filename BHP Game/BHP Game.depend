@@ -1,6 +1,8 @@
 # depslib dependency file v1.0
-1687305336 source:c:\users\hp-1\documents\github\project\bhp game\main.cpp
+1687307558 source:c:\users\hp-1\documents\github\project\bhp game\main.cpp
 	<SFML/Graphics.hpp>
+	"movement.hpp"
+	"miner.hpp"
 
 1687306197 c:\users\hp-1\desktop\sfml-2.5.1\include\sfml\graphics.hpp
 	<SFML/Window.hpp>
@@ -410,4 +412,12 @@
 	<SFML/Graphics/PrimitiveType.hpp>
 	<SFML/Graphics/Drawable.hpp>
 	<SFML/Window/GlResource.hpp>
+
+1687307546 source:c:\users\hp-1\documents\github\project\bhp game\movement.cpp
+	"movement.hpp"
+
+1687307546 c:\users\hp-1\documents\github\project\bhp game\movement.hpp
+
+1687307571 c:\users\hp-1\documents\github\project\bhp game\miner.hpp
+	<SFML/Graphics.hpp>
 
