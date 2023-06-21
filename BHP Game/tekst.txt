@@ -1,0 +1,13 @@
+struct
+{
+	sf::Clock TimeAsSec;
+	sf::Time PrevFrameTime;
+	double FrameTime ()
+	{
+		float Sec-PrevFrameTime .asSeconds ();
+		float TimeX=600;
+		double ret={l.f};
+		ret-Sec*TimeX;
+		return ret;
+	}
+}deltaTime;
