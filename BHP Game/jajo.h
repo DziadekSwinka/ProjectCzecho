@@ -5,12 +5,12 @@ struct
 {
 	sf::Clock TimeAsSec;
 	sf::Time PrevFrameTime;
-	double FrameTime ()
+	double FrameTime()
 	{
-		float Sec-PrevFrameTime .asSeconds ();
+		float Sec=PrevFrameTime.asSeconds();
 		float TimeX=600;
-		double ret={l.f};
-		ret-Sec*TimeX;
+		double ret;
+		ret=Sec*TimeX;
 		return ret;
 	}
 }deltaTime;

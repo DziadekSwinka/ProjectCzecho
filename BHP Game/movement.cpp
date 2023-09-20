@@ -24,14 +24,14 @@ entertaceAnimation::entertaceAnimation(sf::RenderWindow &window1):window(window1
     elev.setPosition(120,340);
     sound.play();
 }
-float entertaceAnimation::Update()
+float entertaceAnimation::Update(double delta)
 {
     anime=true;
     for(int i=0;i<5;i++)
     {
-        if(animationTime.getElapsedTime().asSeconds()<=6.8)
+        if(animationTime.getElapsedTime().asSeconds()<=5.6)
         {
-            shaft[i].move(0,-0.5*deltaTime.FrameTime());
+            shaft[i].move(0,-0.5*delta);
         }else anime=false;
 
         window.draw(shaft[i]);

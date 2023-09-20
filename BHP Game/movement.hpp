@@ -2,13 +2,14 @@
 #define MOVEMENT_HPP_INCLUDED
 #include<SFML/Graphics.hpp>
 #include<SFML/Audio.hpp>
-#include"plik.hpp"
+
+#include "jajo.h"
 
 class entertaceAnimation
 {
 public:
     entertaceAnimation(sf::RenderWindow &window1);
-    float Update();
+    float Update(double delta);
     bool anime;
 private:
     sf::Sound sound;

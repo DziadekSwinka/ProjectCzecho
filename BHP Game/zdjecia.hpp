@@ -1,7 +1,7 @@
 #ifndef ZDJECIA_HPP_INCLUDED
 #define ZDJECIA_HPP_INCLUDED
 #include <SFML/Window.hpp>
-#include "plik.hpp"
+#include "jajo.h"
 class zdj
 {
 private:

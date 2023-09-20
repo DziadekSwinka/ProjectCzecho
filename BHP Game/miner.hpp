@@ -2,6 +2,7 @@
 #define MINER_HPP_INCLUDED
 
 #include <SFML/Graphics.hpp>
+#include "jajo.h"
 
 class miner
 {

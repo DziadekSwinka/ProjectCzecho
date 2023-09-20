@@ -1,19 +1,19 @@
 #ifndef PLIK_HPP_INCLUDED
 #define PLIK_HPP_INCLUDED
 
-struct{
+/*struct{
 /*sf::Clock TimeAsSec;
-sf::Time PrevFrameTime;*/
+sf::Time PrevFrameTime;
 double FrameTime()
 {
     /*float Sec=PrevFrameTime.asSeconds();
     float TimeX=1;
     double ret=1;
-    ret=Sec*TimeX;*/
+    ret=Sec*TimeX;
     //return ret;
     return 1;
 
-}}deltaTime;
+}}deltaTime;*/
 
 
 #endif // PLIK_HPP_INCLUDED

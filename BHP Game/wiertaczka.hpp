@@ -1,7 +1,7 @@
 #ifndef WIERTACZKA_HPP_INCLUDED
 #define WIERTACZKA_HPP_INCLUDED
 #include <SFML/Graphics.hpp>
-#include "plik.hpp"
+#include "jajo.h"
 
 class wiertaczka
 {

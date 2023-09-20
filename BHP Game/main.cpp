@@ -4,7 +4,7 @@
 #include "surr.hpp"
 #include "wiertaczka.hpp"
 #include "zdjecia.hpp"
-#include "plik.hpp"
+#include "jajo.h"
 
 bool zjechal=false;
 int main()
@@ -18,6 +18,7 @@ int main()
     zdj zd(window);
     entertaceAnimation animation(window);
     wiertaczka wiertlo(window);
+    double deltaToAnimation=1;
     while (window.isOpen())
     {
         sf::Event event;
@@ -28,13 +29,16 @@ int main()
         }
         window.clear(sf::Color(43,43,42));
         window.draw(tunnel);
-        if(animation.anime)
-            tunnel.setPosition(tunnel.getPosition().x,animation.Update()+60);
+        if(animation.anime==true)
+            tunnel.setPosition(tunnel.getPosition().x,animation.Update(deltaToAnimation)+60);
         zd.Update(animation.anime);
         surr.Update(animation.anime);
         wiertlo.Update();
         Miner.update(animation.anime,wiertlo.wPojezdzie);
         window.display();
+        deltaTime.PrevFrameTime=deltaTime.TimeAsSec.getElapsedTime();
+        deltaToAnimation=deltaTime.FrameTime();
+        deltaTime.TimeAsSec.restart();
     }
 
     return 0;

@@ -1,6 +1,6 @@
 #ifndef SURR_HPP_INCLUDED
 #define SURR_HPP_INCLUDED
-#include "plik.hpp"
+#include "jajo.h"
 
 class surrounding
 {
